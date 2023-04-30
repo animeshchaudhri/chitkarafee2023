@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notes App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Notes App</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Notes</h2>
+			<ul>
+				<li>
+					<a href="#note1">
+						<h3>Note 1 Title</h3>
+						<p class="metadata">Date/Time: 04/30/2023 10:00AM</p>
+						<p class="metadata">Location: New York, NY</p>
+					</a>
+				</li>
+				<li>
+					<a href="#note2">
+						<h3>Note 2 Title</h3>
+						<p class="metadata">Date/Time: 04/29/2023 02:30PM</p>
+						<p class="metadata">Location: Los Angeles, CA</p>
+					</a>
+				</li>
+				<!-- Add more notes here -->
+			</ul>
+		</section>
+		<section>
+			<h2>Add Note</h2>
+			<form>
+				<label for="title">Title:</label>
+				<input type="text" id="title" name="title" required>
+				<label for="text">Text:</label>
+				<textarea id="text" name="text" required></textarea>
+				<label for="datetime">Date/Time:</label>
+				<input type="datetime-local" id="datetime" name="datetime" required>
+				<label for="location">Location:</label>
+				<input type="text" id="location" name="location" required>
+				<button type="submit">Add Note</button>
+			</form>
+		</section>
+		<section id="note1">
+			<h2>Note 1 Title</h2>
+			<p class="metadata">Date/Time: 04/30/2023 10:00AM</p>
+			<p class="metadata">Location: New York, NY</p>
+			<p>Note 1 Text</p>
+		</section>
+		<section id="note2">
+			<h2>Note 2 Title</h2>
+			<p class="metadata">Date/Time: 04/29/2023 02:30PM</p>
+			<p class="metadata">Location: Los Angeles, CA</p>
+			<p>Note 2 Text</p>
+		</section>
+		<!-- Add more note sections here -->
+	</main>
+	<footer>
+		<p>&copy; 2023 Notes App</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5fa8d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #2980b9;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+  }
+  
+  #popup p {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .close-btn {
+    background-color: #27ae60;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .close-btn:hover {
+    background-color: #219653;
+  }
+  
+  #popup:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
